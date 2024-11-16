@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -63,7 +64,6 @@
     .intro {
     position: relative;
     background-image: url('./img/banner.png');
-    position: relative;
     height: 40rem;
     width: 100%;
     background-size: cover;
