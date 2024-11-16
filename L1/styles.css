@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     background-color: #ffffff;
   }
   
@@ -334,13 +336,295 @@
     color: #58070E;
   }
   
-  .rectangle {
-    margin-top: 4%;
-    height: 40em;
-    width: 80em;
+  #rectangle-outer {
+    position: absolute;
+    top: 100px;
+    left: 30px;
     background: linear-gradient(176deg, #830712 22.67%, #390408 77.68%);
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 1px;
-
+    width: 1200px;  
+    height: 600px;  
+    border-radius: 16px;
   }
+  #rectangle-inner {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 400px;  
+    height: 60px; 
+    border: 2px solid white;
+  }
+
+#card-text {
+  position: absolute;
+  top:300px;
+  left: 50px;
+  width: 1100px; 
+  height: 250px;  
+  padding: 20px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  overflow-y: auto;  
+}
+
+  #mural {
+    position: absolute;
+    width: 600px; 
+    height: 350px;  
+    top: 50px;
+    left: 70px;
+    border: 4px solid white;
+    z-index: 2;
+  }
+
+
+  #destination-title {
+    position: absolute;
+    top: 60px;
+    left: 80%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 72px;
+    white-space: nowrap;
+  }
+  
+  #pylon {
+    position: absolute;
+    width: 650px; 
+    height: 375px;  
+    top: 40px;
+    left: 530px;
+    border: 4px solid white;
+    z-index: 2;
+  }
+
+  #card-text-pylon{
+    position: absolute;
+    top:360px;
+    left: 50px;
+    width: 1100px; 
+    height: 250px;  
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-y: auto;  
+  }
+
+  #rectangle-inner-pylon {
+    position: absolute;
+    top: 100px;
+   left: 80px;
+    width: 400px;  
+    height: 60px; 
+    border: 2px solid white;
+  }
+  
+  
+  #destination-pylon  {
+    position: absolute;
+    top: 60px;
+    left: 270px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 72px;
+    white-space: nowrap;
+  }
+
+
+  #obelisk {
+    position: absolute;
+    width: 600px; 
+    height: 400px;  
+    top: 40px;
+    left: 80px;
+    border: 4px solid white;
+    z-index: 2;
+  }
+
+  #destination-obelisk  {
+    position: absolute;
+    top: 60px;
+    right: -60px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 72px;
+    white-space: nowrap;
+  }
+
+  #rectangle-inner-obelisk {
+    position: absolute;
+    top: 100px;
+   right: 45px;
+    width: 400px;  
+    height: 60px; 
+    border: 2px solid white;
+  }
+
+  #card-text-obelisk{
+    position: absolute;
+    top:360px;
+    left: 50px;
+    width: 1100px; 
+    height: 250px;  
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-y: auto;  
+  }
+
+  
+  #museum {
+    position: absolute;
+    width: 600px; 
+    height: 400px;  
+    top: 20px;
+    right: 20px;
+    border: 4px solid white;
+    z-index: 2;
+  }
+
+  #destination-museum  {
+    position: absolute;
+    top: 60px;
+    left: 200px;
+    line-height: 120%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 72px;
+    
+  }
+
+  #rectangle-inner-museum {
+    position: absolute;
+    top: 110px;
+   left: 25px;
+    width: 370px;  
+    height:130px; 
+    border: 2px solid white;
+  }
+
+  #card-text-museum{
+    line-height: 100%;
+    position: absolute;
+    top:360px;
+    left: 30px;
+    width: 1150px; 
+    height: 330px;  
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-y: auto;  
+  }
+
+  #lagoon {
+    position: absolute;
+    width: 600px; 
+    height: 500px;  
+    top: 20px;
+    left: 80px;
+    border: 4px solid white;
+    z-index: 2;
+  }
+
+  #destination-lagoon  {
+    position: absolute;
+    top: 60px;
+    right: 80px;
+    line-height: 120%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 72px;
+    
+  }
+
+  #rectangle-inner-lagoon {
+    position: absolute;
+    top: 110px;
+   right: 25px;
+    width: 370px;  
+    height:70px; 
+    border: 2px solid white;
+  }
+
+  #card-text-lagoon{
+    line-height: 130%;
+    position: absolute;
+    top:360px;
+    left: 30px;
+    width: 1150px; 
+    height: 330px;  
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    overflow-y: auto;  
+  }
+
+
+ .carousel {
+  position: relative;
+  width: 1500px;  
+  height: 800px;  
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 1200px;  
+  height: 800px;
+  margin: 0 auto;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+.carousel-button:hover,
+.carousel-button:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.7);
+    outline: none;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-button.prev {
+  left: 0;  /* Changed from 4rem to 0 */
+}
+
+.carousel-button.next {
+  right: 0;  /* Changed from 2rem to 0 */
+}
+ .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

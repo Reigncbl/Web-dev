@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mock Website</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=VT323&display=swap" rel="stylesheet">
+
+
+    <script src="script.js" defer></script>
     </head>
     <body>
 
     <header class="header">
         <div class="logo-box">
-            <img src="/img/Logo.png" alt="PUP" class="logo">
+            <img src="./img/Logo.png" alt="PUP" class="logo">
             <div>
                 <h1>Polytechnic University of the Philippines</h1>
                 <h3>THE  COUNTRY’S 1ST POLYTECHNICU</h3>
@@ -49,7 +56,6 @@
                 Modernization Act of 1997, and its Implementing Rules and Regulations contained 
                 in the Commission on Higher Education Memorandum Circular No. 4, series 1997. PUP 
                 is one of the country's highly competent educational institutions. 
-            </p>
             <br>
             <p class="card-des">
                 PUP is a public, non-sectarian, non-profit institution of higher learning primarily 
@@ -57,7 +63,6 @@
                 the physical, intellectual and material well-being of the individual through higher 
                 occupational, technical and professional instruction and training in the applied arts and 
                 sciences related to the fields of commerce, business administration, and technology.
-            </p>
             <button class="button">
                 <a href="#">Read More</a>
             </button>
@@ -69,12 +74,129 @@
             <div class="line1"></div>
             <h1>Destinations</h1>
             <div class="line2"></div>
+            
         </div>
-        <div class="cards">
-  
-     <div class="rectangle"></div>
-     <img
+        
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#10578;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#10579;</button>
+            <ul data-slides>
+                <li class="slide">
+                    
+    
+                        <div>
+                        <img id="mural" src="./img/mural.png">
+                        <div id="rectangle-outer">       
+                    <div> <h1 id="destination-title">MURAL</h1> </div>
+                    <div id="rectangle-inner"> </div>
+            
+                    <div id="card-text">
+                        <p> The sculpture (Cut and welded brass mural relief, 2.5 x 9.3 meters) was built by national artist Eduardo Castrillo † in 1974. 
+                            The theme of the artwork is Consolidated Growth through Education - the role of PUP in the educational development of
+                             the youth in preparation for their involvement in nation building.  The mural illustrates the social, economic, 
+                           industrial, technological, and cultural aspect of life with which man blends himself to develop an environment necessary to the progress of the nation...
+                        </p>
+                    </div>
+            
+                </li>
+                <li class="slide" data-active>
+              
+    
+                    <div>
+                        <img id="pylon" src="./img/pylon.png">
+                        <div id="rectangle-outer">       
+                    <div> <h1 id="destination-pylon">PYLON</h1> </div>
+                    <div id="rectangle-inner-pylon"> </div>
+            
+                    <div id="card-text-pylon">
+                        <p> The Pylon originally stood for the true, the good and the beautiful.
+                            The Triad of pillars may also stand for wisdom, strength and beauty because there should be wisdom to contrive, strength to support and beauty to adorn any great or important undertaking. 
+                            Since 1987, however, the Pylon came to symbolized truth, excellence and wisdom.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide">
+                 
+    
+                    <div>
+                        <img id="obelisk" src="./img/obelisk.png">
+                        <div id="rectangle-outer">       
+                    <div> <h1 id="destination-obelisk">OBELISK</h1> </div>
+                    <div id="rectangle-inner-obelisk"> </div>
+            
+                    <div id="card-text-obelisk">
+                        <p>The Obelisk, standing majestic on its base, depicts the strength of the Polytechnic University of the Philippines as an
+                             institution of higher learning, promoting educational and moral aims which are fortified by a determined leadership with 
+                             a clear vision for the Filipino youth and an efficient support system inspired by the virtues of public service.
+                             </p>
+                    </div>
+                </li>
+                <li class="slide">
+                 
+    
+                    <div>
+                        <img id="museum" src="./img/museum.png">
+                        <div id="rectangle-outer">       
+                    <div> <h1 id="destination-museum">MABINI <br> MUSEUM</h1> </div>
+                    <div id="rectangle-inner-museum"> </div>
+            
+                    <div id="card-text-museum">
+                        <p> The Museo ni Apolinario Mabini, located within the Polytechnic University 
+                            of the Philippines campus, is a historical landmark dedicated to the life and 
+                            legacy of the renowned Filipino revolutionary. This museum houses personal belongings,
+                             documents, and interactive exhibits that showcase Mabini's significant contributions 
+                             to the Philippine independence movement. Visitors can delve into the rich history of the Philippines and gain insights into the ideals and struggles of one of the nation's most revered heroes. The museum serves as an educational and cultural hub, inspiring future generations to appreciate the sacrifices and achievements of our forefathers.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide">
+                 
+    
+                    <div>
+                        <img id="lagoon" src="./img/lagoon.png">
+                        <div id="rectangle-outer">       
+                    <div> <h1 id="destination-lagoon">LAGOON</h1> </div>
+                    <div id="rectangle-inner-lagoon"> </div>
+            
+                    <div id="card-text-lagoon">
+                        <p> The PUP lagoon serves as a serene park and open
+                             space on the PUP campus. Students can relax, study, or 
+                             simply unwind in this tranquil environment. 
+                             The revitalized lagoon is a testament to PUP's 
+                             commitment to enhancing the campus experience.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide">
+                 
+    
+                    <div>
+                        <img id="mural" src="./img/mural.png">
+                        <div id="rectangle-outer">       
+                    <div> <h1 id="destination-title">OBLATION</h1> </div>
+                    <div id="rectangle-inner"> </div>
+            
+                    <div id="card-text">
+                        <p> The sculpture (Cut and welded brass mural relief, 2.5 x 9.3 meters) was built by national artist Eduardo Castrillo † in 1974. 
+                            The theme of the artwork is Consolidated Growth through Education - the role of PUP in the educational development of
+                             the youth in preparation for their involvement in nation building.  The mural illustrates the social, economic, 
+                           industrial, technological, and cultural aspect of life with which man blends himself to develop an environment necessary to the progress of the nation...
+                        </p>
+                    </div>
+                </li>
+    
+            </ul>
+            
+               
+
         </div>
+
+       
+
+
+     
+
+ 
 
     </section>
     <section id="map" class="map">
@@ -84,7 +206,7 @@
             <div class="line2"></div>
         </div>
         <div class="cards">
-            <img src="/img/map.png" alt="map">
+            <img src="./img/map.png" alt="map">
         </div>
     </section>
 </main>
