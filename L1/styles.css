@@ -62,7 +62,7 @@
   
     .intro {
     position: relative;
-    background-image: url('/L1/img/banner.png');
+    background-image: url('./img/banner.png');
     position: relative;
     height: 40rem;
     width: 100%;
@@ -147,7 +147,7 @@
   
   .about .card {
     position: relative;
-    background-image: url('/L1/img/pylonbg.png');
+    background-image: url('./img/pylonbg.png');
     width: 90%;
     height: 50rem;
     background-size: contain;
