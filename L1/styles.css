@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -64,8 +65,7 @@
   
     .intro {
     position: relative;
-    background-image: url('/L1/img/banner.png');
-    position: relative;
+    background-image: url('./img/banner.png');
     height: 40rem;
     width: 100%;
     background-size: cover;
@@ -149,7 +149,7 @@
   
   .about .card {
     position: relative;
-    background-image: url('/L1/img/pylonbg.png');
+    background-image: url('./img/pylonbg.png');
     width: 90%;
     height: 50rem;
     background-size: contain;
