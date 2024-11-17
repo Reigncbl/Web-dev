@@ -6,7 +6,13 @@
     <title>Master Buffalo</title>
     <link rel="icon" type="image/png" href="./img/Logo.png">
     <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&family=VT323&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
 </head>
+
 <body>
     <header class="header">
         <img src="./img/Logo.png" alt="Logo">
@@ -29,128 +35,196 @@
         <section class="menu">
             <img src="./img/sign.png" alt="Sign" class="title">
             <div class="card-container">
-                <div class="card">
-                    <h1>Wings</h1>
-                    <img src="./img/wing.png" alt="Wings" class="card-img">
-                </div>
-                <div class="card">
+                <button data-target="wings" class="card">
+                        <h1>Wings</h1>
+                        <img src="./img/wing.png" alt="Wings" class="card-img">
+                </button>
+                <button data-target="silog" class="card">
                     <h1>Silog</h1>
                     <img src="./img/wing.png" alt="Wings" class="card-img">
-                </div>
-                <div class="card">
+                </button>
+                <button data-target="drinks" class="card">
                     <h1>Drinks</h1>
                     <img src="./img/wing.png" alt="Wings" class="card-img">
-                </div>  
+                </button> 
             </div>
-            <section>
-                <div>
-                    
+            <ul>
+                <li id="wings">
+                    <div class="menu-content" >
+                        <div class="legends">
+                            <h1 class="wings">WINGS</h1>
+                            <h1 class="flavor">FLAVORS</h1>
+                            <div class="prices">
+                                <h1>PRICES</h1>
+                                <h3>WITH RICE</h3>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <img src="./img/Wings-menu.png" alt="Wings Menu" class="img">
+                            <ul class="flavor">
+                                <li></li>
+                                <li>CLASSIC NORMAL</li>
+                                <li>CLASSIC MILD</li>
+                                <li>CLASSIC 911</li>
+                                <li>SALTED EGG</li>
+                                <li>GARLIC PARMESAN</li>
+                                <li>SMOKE BBQ</li>
+                                <li>HONEY MUSTARD</li>
+                                <li>LEMON PEPPER</li>
+                                <li>KOREAN SOY</li>
+                                <li>CHEESY BACON</li>
+                                <li>HONEY GARLIC</li>
+                            </ul>
+                            <div class="prices">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>2 PCS</th>
+                                            <th>4 PCS</th>
+                                            <th>WITH DIP<br>6 PCS</th>
+                                            <th>WITH 2 DIP<br>10 PCS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="body">
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₱ 59</td>
+                                            <td>₱ 106</td>
+                                            <td>₱ 141</td>
+                                            <td>₱ 235</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>     
+                </li>
+                <li id="silog">
                     <div class="menu-content">
-                        <div>
-                            <h1>WINGS</h1>
-                            <img src="./img/Wings-menu.png" alt="Wings Menu">
+                        <div class="two-legends">
+                            <h1 class="wings">SILOG</h1>
+                            <h1 class="flavor"></h1>
+                            <h1 class="prices">PRICES</h1>
                         </div>
-                        <ul>
-                            <h1>FLAVORS</h1>
-                            <li>CLASSIC NORMAL</li>
-                            <li>CLASSIC MILD</li>
-                            <li>CLASSIC 911</li>
-                            <li>SALTED EGG</li>
-                            <li>GARLIC PARMESAN</li>
-                            <li>SMOKE BBQ</li>
-                            <li>HONEY MUSTARD</li>
-                            <li>LEMON PEPPER</li>
-                            <li>KOREAN SOY</li>
-                            <li>CHEESY BACON</li>
-                            <li>HONEY GARLIC</li>
-                        </ul>
-                        <div>
-                            <h1>PRICES</h1>
-                            <h3>WITH RICE</h3>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>2 PCS</th>
-                                        <th>4 PCS</th>
-                                        <th>WITH DIP<br>6 PCS</th>
-                                        <th>WITH 2 DIP<br>10 PCS</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                    <tr>
-                                        <td>₱ 59</td>
-                                        <td>₱ 106</td>
-                                        <td>₱ 141</td>
-                                        <td>₱ 235</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="two-content">
+                            <img src="./img/silog.png" alt="Wings Menu" class="img">
+                            <ul class="flavor">
+                                <li>HUNGSILOG</li>
+                                <li>PORKSILOG</li>
+                                <li>TAPSILOG</li>
+                                <li>CHICKSILOG</li>
+                                <li>TOSILOG</li>
+                            </ul>
+                            <ul class="prices">
+                                <li>₱ 120</li>
+                                <li>₱ 129</li>
+                                <li>₱ 129</li>
+                                <li>₱ 129</li>
+                                <li>₱ 129</li>
+                            </ul>
                         </div>
-
                     </div>
-                </div>
-            </section>
+                </li>
+                <li id="drinks">
+                    <div class="menu-content">
+                        <div class="two-legends">
+                            <h1 class="wings">DRINKS</h1>
+                            <h1 class="flavor">PRICES</h1>
+                            <h1 class="prices"></h1>
+                        </div>
+                        <div class="two-content">
+                            <ul class="drinks">
+                                <li>ICED AMERICANO</li>
+                                <li>THAI MILKTEA</li>
+                                <li>MATCHA LATTE</li>
+                                <li>SPANISH LATTE</li>
+                                <li>NUTELLA LATTE</li>
+                                <li>BISCOFFLATTE</li>
+                                <li>GULA MELA KA</li>
+                                <li>CARAMEL MACCHIATO</li>
+                                <li>JAVACHIP FRAPPUCHINO</li>
+                                <li>DARK MOCHA</li>
+                            </ul>
+                            <ul class="drinks-prices">
+                                <li>₱ 125</li>
+                                <li>₱ 138</li>
+                                <li>₱ 144</li>
+                                <li>₱ 157</li>
+                                <li>₱ 157</li>
+                                <li>₱ 157</li>
+                                <li>₱ 157</li>
+                                <li>₱ 157</li>
+                                <li>₱ 163</li>
+                                <li>₱ 163</li>
+                            </ul>
+                            <img src="./img/drinks.png" alt="drinks Menu" class="img">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+                      
         </section>
-        <div>
-            <div>
-                <div>
-                    <h1>Reserve Now!</h1>
-                </div>
-            </div>
+        <div class="coa">
+            <a href="#reserve" class="button">RESERVE A SEAT HERE!</a>
         </div>
         <section id="about" class="about">
             <h1>About Us</h1>
@@ -160,7 +234,7 @@
                 where they can savor the bold flavors of our wings and create 
                 alasting memories with loved ones</p>
         </section>
-        <section id="reservation" class="reservation">
+        <section id="reserve" class="reservation">
             <h1>RESERVATION</h1>
             <div class="form">
                 <form action="#">

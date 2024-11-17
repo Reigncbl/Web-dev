@@ -66,6 +66,9 @@ nav ul li a:hover {
     align-items: center;
 
 }
+.menu ul{
+  list-style: none;
+}
 .menu .title{
     width: 30%;
     padding: 4rem 0;
@@ -74,7 +77,23 @@ nav ul li a:hover {
     display: flex;
     gap: 2rem;
   }
-
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: transparent;
+  }
+.card:active {
+  transform: scale(1.1);
+}
+.card:hover{
+  transform: scale(1.1);
+}
 .card {
     position: relative;
     background-image: url("./img/Card.png");
@@ -135,6 +154,27 @@ nav ul li a:hover {
     text-align: center;
     max-width: 80%;
 }
+.coa{
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coa .button{
+  padding: 10px 20px;
+  font-size: 2rem;
+  background-color: #262626;
+  border: #BA1111 0.3rem solid;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.coa .button:hover{
+  transform: scale(1.1);
+}
 .reservation {
     max-width: 100%;
     padding: 4rem 0;
@@ -194,7 +234,7 @@ input[type="number"] {
     color: white;
 }
 
-button {
+.reservation button {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #262626;
@@ -205,7 +245,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.reservation button:hover {
     background-color: #FE0000;
 }
 
@@ -243,4 +283,185 @@ button:hover {
     align-items: center;
     gap: 1rem;
   }
-  
+  .menu-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 8rem;
+    border-top: #BA1111 0.8rem solid;
+    border-bottom: #BA1111 0.8rem solid;
+    margin-top: 1rem;
+  }
+  .menu-content .legends{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content:start;
+    align-items: center;
+    padding: 2rem;
+  }
+  .main-content .legends .flavor{
+    display: flex;
+    justify-content: center;
+  }
+  .main-content .wings{
+    grid-column: span 2 / span 2; 
+    display: flex;
+    justify-content: center;
+  }
+  .main-content .img{
+    grid-column: span 2 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .main-content .prices{
+    grid-column: span 2 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content:start;
+    align-items: start;
+    padding: 2rem;
+  }
+  .content ul{
+    list-style: none;
+    border-right: #fff 0.1rem solid;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .content ul li{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    display: grid;
+    grid-template-rows: repeat(12, minmax(0, 1fr));
+
+}
+thead{
+    grid-row: span 1 / span 1;
+    width: 100%;
+    text-align: center; 
+    
+    
+}
+tbody{
+    width: 100%;
+    grid-row: span 11 / span 11;
+    display: grid;
+    grid-template-rows: repeat(11, minmax(0, 1fr));
+
+}
+th, td {
+    padding: 10px;  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+td {
+    font-size: large;
+    font-weight: bold;
+}
+th {
+    font-size: normal;
+    font-weight: bold;
+}
+tr{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.two-legends{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content:start;
+    align-items: center;
+    padding: 2rem;
+}
+.two-content{
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content:start;
+  align-items: start;
+  padding: 2rem;
+}
+.two-content img{
+  grid-column: span 2 / span 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.two-content .flavor{
+  list-style: none;
+  border-right: #fff 0.1rem solid;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 8rem 0;
+}
+.two-content .prices{
+  grid-column: span 2 / span 2;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 8rem 0;
+}
+.two-content ul li{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+}
+.two-content .drinks{
+  grid-column: span 2 / span 2;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-right: #fff 0.1rem solid;
+}
+.two-content .drinks-prices{
+  list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
