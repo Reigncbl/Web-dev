@@ -20,6 +20,7 @@
     justify-content: space-between;
     align-items: start;
     padding:2rem;
+    position: ;
   }
   
   header .logo-box {
@@ -35,7 +36,7 @@
   }
   
   nav {
-    width: 100%;    
+    width: 100%; 
   }
 
   nav ul {
@@ -163,17 +164,27 @@
     padding: 10rem;
   }
   
+  .about .about-container{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-left: 40%;
+
+  }
   .about .card p {
-    position: relative;
     font-size: 1.1rem;
     text-align: justify;
     color: white;
-    max-width: 60%;
+    max-width: 100%;
     line-height: 1.6;
   }
   
   .about .card .button {
-    position: relative;
+    float: right;
+    clear: right;
     background: linear-gradient(90deg, #900000 0%, #A45656 54.1%, #B29191 100%);
     color: white;
     margin-top: 3rem;

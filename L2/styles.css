@@ -187,6 +187,7 @@ nav ul li a:hover {
     font-weight: bold;
     padding: 4rem 0;
     color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .form {
     display: flex;
